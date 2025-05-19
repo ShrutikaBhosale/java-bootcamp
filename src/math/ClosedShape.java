@@ -1,7 +1,7 @@
 package math;
 
 public interface ClosedShape {
-    public int area();
+    public int area() throws Exception;
     public int perimeter();
 
 }

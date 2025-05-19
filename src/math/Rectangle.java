@@ -1,6 +1,6 @@
 package math;
 
-public class Rectangle implements ClosedShape{
+public class Rectangle implements ClosedShape {
     private final int length;
     private final int breadth;
 
@@ -9,11 +9,19 @@ public class Rectangle implements ClosedShape{
         this.breadth = breadth;
     }
 
-    public int area() {
+    private boolean isValidDimensions() {
+        return length > 0 && breadth > 0;
+    }
+
+    public int area() throws Exception {
+        if (!isValidDimensions())
+            throw new Exception("Invalid Dimensions");
+
         return length * breadth;
     }
 
     public int perimeter() {
-        return  2 * ( length + breadth);
+
+        return 2 * (length + breadth);
     }
 }
