@@ -1,7 +1,6 @@
 package math;
 
-public class Rectangle {
-
+public class Rectangle implements ClosedShape{
     private final int length;
     private final int breadth;
 
@@ -15,6 +14,6 @@ public class Rectangle {
     }
 
     public int perimeter() {
-    return  2 * ( length + breadth);
+        return  2 * ( length + breadth);
     }
 }
