@@ -1,0 +1,17 @@
+package math;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class RectangleTest {
+    @Test
+    public  void areaWithValidValues() {
+        Rectangle rectangle = new Rectangle(2,2);
+        assertEquals(4, rectangle.area());
+        
+        rectangle = new Rectangle(5, 6);
+        assertEquals(30, rectangle.area());
+    }
+
+}
