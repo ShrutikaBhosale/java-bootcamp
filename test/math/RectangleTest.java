@@ -9,9 +9,18 @@ class RectangleTest {
     public  void areaWithValidValues() {
         Rectangle rectangle = new Rectangle(2,2);
         assertEquals(4, rectangle.area());
-        
+
         rectangle = new Rectangle(5, 6);
         assertEquals(30, rectangle.area());
+    }
+
+    @Test
+    public  void perimeterTest() {
+        Rectangle rectangle = new Rectangle(2,2);
+        assertEquals(8, rectangle.perimeter());
+
+        rectangle = new Rectangle(5, 6);
+        assertEquals(22, rectangle.perimeter());
     }
 
 }
