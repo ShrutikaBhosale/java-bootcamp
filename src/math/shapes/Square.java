@@ -1,4 +1,4 @@
-package math;
+package math.shapes;
 
 public class Square implements ClosedShape {
 
@@ -13,6 +13,6 @@ public class Square implements ClosedShape {
     }
 
     public int perimeter() {
-        return 2 * side;
+        return 4 * side;
     }
 }

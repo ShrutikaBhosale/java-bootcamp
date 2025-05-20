@@ -1,4 +1,4 @@
-package math;
+package math.shapes;
 
 public interface ClosedShape {
     public int area() throws Exception;

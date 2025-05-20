@@ -1,5 +1,6 @@
 package math;
 
+import math.shapes.Square;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,10 +18,10 @@ class SquareTest {
     @Test
     public  void perimeterTest() {
         Square square = new Square(2);
-        assertEquals(4, square.perimeter());
+        assertEquals(8, square.perimeter());
 
         square = new Square(5);
-        assertEquals(10,square.perimeter());
+        assertEquals(20,square.perimeter());
     }
 }
 

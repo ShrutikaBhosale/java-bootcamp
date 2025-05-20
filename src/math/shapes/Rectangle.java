@@ -1,4 +1,4 @@
-package math;
+package math.shapes;
 
 public class Rectangle implements ClosedShape {
     private final int length;
